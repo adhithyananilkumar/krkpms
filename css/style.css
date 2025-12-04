@@ -63,8 +63,6 @@ ul {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
     background: #111;
 }
 
@@ -82,6 +80,7 @@ ul {
 /* Hero Section */
 .hero {
     position: relative;
+    flex: 1 1 auto;
     width: 100%;
     max-width: none;
     background-image: url('../assets/shoolbg.jpg');
@@ -90,7 +89,8 @@ ul {
     background-repeat: no-repeat;
     border-radius: 0;
     overflow: hidden;
-    padding: 102px 40px 130px; /* push hero-inner down, nav lower (6px downward) */
+    min-height: 100vh; /* always at least full viewport height */
+    padding: 102px 40px 130px; /* content spacing */
 }
 
 .hero-inner {
