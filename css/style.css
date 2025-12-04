@@ -90,7 +90,10 @@ ul {
     border-radius: 0;
     overflow: hidden;
     min-height: 100vh; /* always at least full viewport height */
-    padding: 102px 40px 130px; /* content spacing */
+    padding: 48px 40px 80px; /* top/bottom spacing for full-height distribution */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spread logo block and nav over full height */
 }
 
 .hero-inner {
@@ -144,7 +147,7 @@ ul {
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: 320px 0 0; /* move nav grid further down */
+    padding: 40px 0 0; /* now controlled by hero's flex spacing */
 }
 
 .nav-grid {
@@ -201,7 +204,7 @@ ul {
     }
 
     .hero {
-        padding: 94px 16px 110px; /* slightly more space on mobile too (+6px) */
+        padding: 56px 16px 72px; /* balanced for smaller screens */
     }
 
     .hero-logo {
